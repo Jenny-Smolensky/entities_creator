@@ -1,38 +1,132 @@
-.App {
+h1 {
+  color: #121213;
+  font-size: 50px;
   text-align: center;
+  font-weight: bolder;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_div {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./images/map.JPG');
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coordinates {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div{
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.label {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  color: black;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col-1 {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 12px;
+  width: 13%;
 }
+.col-2 {
+  
+  text-align: right;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  width: 10%;
+}
+
+.input-element {
+  background-color: #2f2f31;
+  width: 120px;
+  height: 25px;
+  font-size: 14px;
+  color: rgb(152, 152, 153);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title {
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+  color: rgb(25, 27, 59);
+  font-weight: bold;
+}
+
+.send-btn {
+  background-color: rgb(25, 27, 59);
+  color:rgb(152, 152, 153);
+  font-size: 20px;
+  border-radius: 5px;
+  width: 90px;
+  height: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.btn-row{
+  padding-top: 25px;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+  color: rgb(152, 152, 153);
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.link-row {
+  margin-bottom: 50px;
+}
+
+.alert-shown {
+  opacity: 1;
+  transition: all 250ms linear;
+  background-color: rgb(123, 123, 126);
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
+p.main-message {
+
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(25, 27, 59);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+p.error-message {
+  margin-top: 0;
+  font-size: 25px;
+  color: rgb(25, 27, 59);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
