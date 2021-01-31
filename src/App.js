@@ -46,6 +46,9 @@ class App extends React.Component{
     this.setState({lng: value});
   }
 
+
+  
+
   //click send from UI
   handleClick(e) {
 
@@ -57,7 +60,11 @@ class App extends React.Component{
                             longitude: this.state.lng})
     };
 
-    fetch('http://localhost:8000/add-marker', requestItem) //send POST request to server
+        let local_host_path = "http://localhost:8000/";
+        let web_server_path = "https://jennysmolensky.pythonanywhere.com/";
+        
+        let path = web_server_path + "add_marker";
+        fetch(path, requestItem) //send POST request to server
 
       .then(response => {  //wait for request (if nessecary can change to async here)
         
