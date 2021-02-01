@@ -94,6 +94,12 @@ a{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.info{
+  color: rgb(152, 152, 153);
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 div.link-row {
   margin-bottom: 50px;
 }
@@ -102,10 +108,11 @@ div.link-row {
   opacity: 1;
   transition: all 250ms linear;
   background-color: rgb(123, 123, 126);
-  margin-left: 700px;
-  margin-right: 700px;
+  margin-left: 500px;
+  margin-right: 500px;
   margin-top: 30px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .alert-hidden {

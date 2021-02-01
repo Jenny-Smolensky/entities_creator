@@ -63,7 +63,7 @@ class App extends React.Component{
         let local_host_path = "http://localhost:8000/";
         let web_server_path = "https://jennysmolensky.pythonanywhere.com/";
         
-        let path = web_server_path + "add_marker";
+        let path = local_host_path + "add_marker";
         fetch(path, requestItem) //send POST request to server
 
       .then(response => {  //wait for request (if nessecary can change to async here)
@@ -134,6 +134,7 @@ render(){
                 <p className="title"> Enter coordinates to mark on the map  </p>
                 <div className="link-row" >
                 <a  target="_blank" href="https://www.latlong.net">you can search a country or place here</a>
+                <p className="info">Range of latitude is -90 and +90.   Range of longitude is -180 and +180, </p>
                 </div>
                 
                 {/* row of element name */}
